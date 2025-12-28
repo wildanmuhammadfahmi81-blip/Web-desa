@@ -33,6 +33,17 @@ dilaksanakan pada tahun mendatang.
 Kegiatan ini dihadiri oleh perangkat desa, tokoh masyarakat, serta perwakilan
 warga guna menyerap aspirasi masyarakat secara langsung."
   ],
+  4 => [
+    'judul' => 'Musyawarah karang taruna',
+    'gambar' => 'berita.jpg',
+    'tanggal' => '10 Agustus 2025',
+    'penulis' => 'Sekretariat Desa',
+    'isi' => "Musyawarah karang taruna membahas perencanaan pembangunan desa yang akan
+dilaksanakan pada tahun mendatang.
+
+Kegiatan ini dihadiri oleh perangkat desa, tokoh masyarakat, serta perwakilan
+warga dari setiap rt, guna menyerap aspirasi masyarakat secara langsung."
+  ],
 ];
 
 $id = $_GET['id'] ?? null;

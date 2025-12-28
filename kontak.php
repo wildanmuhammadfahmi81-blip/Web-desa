@@ -13,6 +13,17 @@
 <?php include 'header.php'; ?>
 <?php include 'navbar.php'; ?>
 
+<!-- HERO -->
+<section class="profil-hero">
+  <div class="container text-center">
+    <h1 class="fw-bold">Kontak dan Aspirasi Warga</h1>
+    <p class="lead">
+      Sampaikan pesan, saran, atau aspirasi Anda kepada
+      Pemerintah Desa Subang melalui formulir di bawah ini.
+    </p>
+  </div>
+</section>
+
 <footer class="bg-dark text-white mt-5">
   <div class="container py-5">
     <div class="row g-4">

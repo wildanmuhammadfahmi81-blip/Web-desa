@@ -12,6 +12,17 @@
 <?php include 'header.php'; ?>
 <?php include 'navbar.php'; ?>
 
+<!-- HERO -->
+<section class="profil-hero">
+  <div class="container text-center">
+    <h1 class="fw-bold">Berita Desa</h1>
+    <p class="lead">
+      berita terkini seputar kegiatan dan informasi
+      di Desa Subang. 
+    </p>
+  </div>
+</section>
+
 <?php
 $berita = [
   [
@@ -34,6 +45,13 @@ $berita = [
     'gambar' => 'berita.jpg',
     'ringkas' => 'Pembahasan pembangunan desa bersama masyarakat.',
     'isi' => 'Musyawarah desa membahas rencana kerja tahun depan...'
+  ],
+  [
+    'id' => 4,
+    'judul' => 'Musyawarah karang taruna',
+    'gambar' => 'berita.jpg',
+    'ringkas' => 'Pembahasan karang taruna desa bersama masyarakat.',
+    'isi' => 'Musyawarah karang taruna membahas rencana kerja untuk tahun depan...'
   ],
 ];
 ?>

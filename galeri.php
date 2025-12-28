@@ -13,6 +13,16 @@
 <?php include 'header.php'; ?>
 <?php include 'navbar.php'; ?>
 
+<!-- HERO -->
+<section class="profil-hero">
+  <div class="container text-center">
+    <h1 class="fw-bold">Galeri Kegiatan Desa</h1>
+    <p class="lead">
+      Dokumentasi kegiatan dan aktivitas masyarakat Desa Subang.
+    </p>
+  </div>
+</section>
+
 <section class="container my-5 fade-up">
   <h2 class="section-title text-center mb-4">Galeri Kegiatan Desa</h2>
   <p class="text-center mb-5">

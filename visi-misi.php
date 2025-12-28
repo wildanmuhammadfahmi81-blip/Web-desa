@@ -64,6 +64,39 @@
   </div>
 </section>
 
+<!-- === DATA SINGKAT (DIAGRAM BATANG) === -->
+<section class="container my-5 fade-up">
+  <h3 class="text-center mb-4">Data Singkat Desa Subang</h3>
+
+  <canvas id="dataDesaChart"></canvas>
+</section>
+
+<!-- CDN Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('dataDesaChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Dusun', 'RT', 'Penduduk', 'KK'],
+      datasets: [{
+        label: 'Jumlah',
+        data: [50, 74, 8324, 1112],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
 <footer class="bg-dark text-white text-center py-3">
   © <?= date('Y') ?> Pemerintah Desa Makmur
 </footer>

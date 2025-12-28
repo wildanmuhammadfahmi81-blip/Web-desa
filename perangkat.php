@@ -31,61 +31,55 @@
   </div>
 </section>
 
-<!-- KEPALA DESA -->
+<!-- STRUKTUR PERANGKAT DESA -->
 <section class="struktur-desa py-5 fade-up">
   <div class="container text-center">
 
-    <h2 class="section-title mb-5">Struktur Pemerintahan Desa</h2>
-
     <!-- KEPALA DESA -->
-    <div class="struktur-level">
-      <div class="struktur-card utama">
-        <img src="assets/img/kades.png">
-        <h6>Bapak Ahmad Subandi</h6>
-        <span>Kepala Desa</span>
-      </div>
+    <div class="struktur-level mb-5">
+      <a href="detail-perangkat.php?id=kades" class="text-decoration-none text-dark">
+        <div class="struktur-card utama text-center">
+          <img src="assets/img/kades.png" alt="Kepala Desa">
+          <h6 class="mt-3">Bapak Ahmad Subandi</h6>
+          <span>Kepala Desa</span>
+        </div>
+      </a>
     </div>
 
-    <!-- GARIS -->
-    <div class="line-vertical"></div>
+    <!-- PERANGKAT DESA -->
+    <div class="row justify-content-center g-4">
 
-    <!-- SEKDES -->
-    <div class="struktur-level">
-      <div class="struktur-card">
-        <img src="assets/img/sekdes.jpg">
-        <h6>Ibu Siti Aminah</h6>
-        <span>Sekretaris Desa</span>
-      </div>
-    </div>
-
-    <!-- GARIS -->
-    <div class="line-vertical"></div>
-
-    <!-- PERANGKAT -->
-    <div class="struktur-level row justify-content-center g-4">
-
-      <div class="col-md-3">
-        <div class="struktur-card">
-          <img src="assets/img/sekdes.jpg">
-          <h6>Bapak Dedi Saputra</h6>
-          <span>Kaur Keuangan</span>
-        </div>
+      <!-- SEKRETARIS DESA -->
+      <div class="col-md-3 col-sm-6">
+        <a href="detail-perangkat.php?id=sekdes" class="text-decoration-none text-dark">
+          <div class="struktur-card text-center">
+            <img src="assets/img/sekdes.jpg" alt="Sekretaris Desa">
+            <h6 class="mt-3">Ibu Siti Aminah</h6>
+            <span>Sekretaris Desa</span>
+          </div>
+        </a>
       </div>
 
-      <div class="col-md-3">
-        <div class="struktur-card">
-          <img src="assets/img/sekdes.jpg">
-          <h6>Ibu Lina Marlina</h6>
-          <span>Kaur Umum</span>
-        </div>
+      <!-- KAUR KEUANGAN -->
+      <div class="col-md-3 col-sm-6">
+        <a href="detail-perangkat.php?id=keuangan" class="text-decoration-none text-dark">
+          <div class="struktur-card text-center">
+            <img src="assets/img/sekdes.jpg" alt="Kaur Keuangan">
+            <h6 class="mt-3">Bapak Dedi Saputra</h6>
+            <span>Kaur Keuangan</span>
+          </div>
+        </a>
       </div>
 
-      <div class="col-md-3">
-        <div class="struktur-card">
-          <img src="assets/img/sekdes.jpg">
-          <h6>Bapak Rudi Hartono</h6>
-          <span>Kasi Pelayanan</span>
-        </div>
+      <!-- KAUR UMUM -->
+      <div class="col-md-3 col-sm-6">
+        <a href="detail-perangkat.php?id=umum" class="text-decoration-none text-dark">
+          <div class="struktur-card text-center">
+            <img src="assets/img/sekdes.jpg" alt="Kaur Umum">
+            <h6 class="mt-3">Bapak Wildan</h6>
+            <span>Kaur Umum</span>
+          </div>
+        </a>
       </div>
 
     </div>

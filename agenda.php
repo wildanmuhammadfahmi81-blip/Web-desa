@@ -21,10 +21,12 @@
 <?php include 'navbar.php'; ?>
 
 <!-- HERO -->
-<section class="py-5 text-center bg-light">
-  <div class="container">
-    <h1 class="fw-bold text-success">Agenda Desa</h1>
-    <p class="text-muted">Jadwal dan kegiatan Desa Subang</p>
+<section class="profil-hero">
+  <div class="container text-center">
+    <h1 class="fw-bold">Agenda Desa</h1>
+    <p class="lead">
+      Jadwal dan kegiatan Desa Subang yang akan datang.
+    </p>
   </div>
 </section>
 
@@ -88,7 +90,7 @@
 </div>
 
       <!-- Agenda 3 -->
-      <div class="col-md-4 agenda-item rutin">
+      <div class="col-md-4 agenda-item resmi">
   <div class="card agenda-card h-100">
     <div class="agenda-date">
       <span class="day">12</span>
@@ -96,10 +98,73 @@
     </div>
 
     <div class="card-body">
-      <span class="badge bg-success mb-2">Rutin</span>
+      <span class="badge bg-success mb-2">Resmi</span>
       <h5 class="fw-bold">Agenda HUT Desa</h5>
 
       <p class="agenda-info">📍 Balai Desa Subang</p>
+      <p class="agenda-desc">
+        Kegiatan gotong royong membersihkan lingkungan desa bersama
+        seluruh warga dan perangkat desa.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Agenda 4 -->
+      <div class="col-md-4 agenda-item resmi">
+  <div class="card agenda-card h-100">
+    <div class="agenda-date">
+      <span class="day">25</span>
+      <span class="month">jan</span>
+    </div>
+
+    <div class="card-body">
+      <span class="badge bg-success mb-2">Resmi</span>
+      <h5 class="fw-bold">Isra mi'raj </h5>
+
+      <p class="agenda-info">alun-alun desa Subang</p>
+      <p class="agenda-desc">
+        Kegiatan gotong royong membersihkan lingkungan desa bersama
+        seluruh warga dan perangkat desa.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Agenda 5 -->
+      <div class="col-md-4 agenda-item resmi">
+  <div class="card agenda-card h-100">
+    <div class="agenda-date">
+      <span class="day">25</span>
+      <span class="month">jan</span>
+    </div>
+
+    <div class="card-body">
+      <span class="badge bg-success mb-2">Resmi</span>
+      <h5 class="fw-bold">Isra mi'raj </h5>
+
+      <p class="agenda-info">alun-alun desa Subang</p>
+      <p class="agenda-desc">
+        Kegiatan gotong royong membersihkan lingkungan desa bersama
+        seluruh warga dan perangkat desa.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Agenda 6 -->
+      <div class="col-md-4 agenda-item rutin">
+  <div class="card agenda-card h-100">
+    <div class="agenda-date">
+      <span class="day">25</span>
+      <span class="month">jan</span>
+    </div>
+
+    <div class="card-body">
+      <span class="badge bg-success mb-2">Resmi</span>
+      <h5 class="fw-bold">Isra mi'raj </h5>
+
+      <p class="agenda-info">alun-alun desa Subang</p>
       <p class="agenda-desc">
         Kegiatan gotong royong membersihkan lingkungan desa bersama
         seluruh warga dan perangkat desa.
