@@ -1,0 +1,494 @@
+/* HEADER ATAS */
+.top-header {
+  background: linear-gradient(
+      rgba(255,255,255,0.9),
+      rgba(255,255,255,0.9)
+    ),
+    url('../img/header-bg.jpg') center/cover no-repeat;
+  border-bottom: 4px solid #2e7d32;
+}
+
+.logo-desa {
+  width: 90px;
+}
+
+.judul-desa h2,
+.judul-desa h4 {
+  line-height: 1.1;
+}
+
+.judul-desa h5 {
+  font-family: 'Poppins', cursive;
+}
+
+.hero-full {
+  width: 100vw;
+  height: 460px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+}
+
+.hero-full img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero-full {
+    height: 260px;
+  }
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-full {
+    height: 250px;
+  }
+}
+
+/* HERO FULL */
+.hero-full {
+  position: relative;
+  width: 100vw;
+  height: 480px;
+  overflow: hidden;
+}
+
+.hero-full img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* OVERLAY TEKS */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.hero-overlay p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-full {
+    height: 260px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.6rem;
+  }
+}
+
+.card-berita {
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card-berita:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.section-title {
+  font-weight: 600;
+}
+
+.card-berita img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-berita {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.card-berita:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.content-berita p {
+  margin-bottom: 1.2rem;
+}
+
+.content-berita {
+  text-align: justify;
+}
+
+/* =======================
+   AGENDA DESA
+======================= */
+.agenda-card {
+  position: relative;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: all .3s ease;
+  background: #bce597;
+}
+
+.agenda-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.15);
+}
+
+.agenda-date {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #198754, #28a745);
+  color: #beebae;
+  border-radius: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+.agenda-date .day {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.agenda-date .month {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.agenda-info {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.agenda-desc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.agenda-card .card-body {
+  padding: 24px;
+  padding-top: 90px;   /* ruang untuk tanggal */
+}
+
+.agenda-card h5 {
+  margin-top: 8px;
+}
+
+.filter-btn.active {
+  background-color: #198754;
+  color: #fff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HERO */
+.profil-hero {
+  background: linear-gradient(135deg, #198754, #28a745);
+  color: white;
+  padding: 80px 0;
+}
+
+.profil-hero h1 {
+  font-size: 2.8rem;
+}
+
+.profil-hero p {
+  max-width: 700px;
+  margin: auto;
+  opacity: 0.95;
+}
+
+/* CONTENT */
+.profil-content {
+  margin-top: -50px;
+  margin-bottom: 80px;
+}
+
+.profil-card {
+  background: #fff;
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.profil-card h4 {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.profil-card p,
+.profil-card li {
+  line-height: 1.8;
+  color: #555;
+}
+
+/* IMAGE */
+.profil-img {
+  max-height: 420px;
+  object-fit: cover;
+}
+
+/* ANIMASI */
+.fade-up {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HERO PROFIL & VISI MISI */
+.profil-hero {
+  background: linear-gradient(
+    rgba(0, 100, 0, 0.6),
+    rgba(0, 100, 0, 0.6)
+  ),
+  url('../img/desa.jpg') center/cover no-repeat;
+  color: white;
+  padding: 90px 0;
+}
+
+.profil-hero h1 {
+  font-weight: 700;
+}
+
+.profil-hero p {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* KONTEN PROFIL */
+.profil-content {
+  margin-top: 60px;
+}
+
+.profil-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.profil-card:hover {
+  transform: translateY(-6px);
+}
+
+.profil-card h4 {
+  color: #198754;
+  font-weight: 600;
+}
+
+/* LIST MISI */
+.profil-list {
+  padding-left: 18px;
+}
+
+.profil-list li {
+  margin-bottom: 10px;
+}
+
+/* ANIMASI */
+.fade-up {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profil-card img {
+  transition: transform 0.3s ease;
+}
+
+.profil-card:hover img {
+  transform: scale(1.05);
+}
+
+/* STRUKTUR DESA FLOWCHART */
+.struktur-desa {
+  background: #f8fafc;
+}
+
+.struktur-level {
+  display: flex;
+  justify-content: center;
+}
+
+.struktur-card {
+  background: white;
+  padding: 20px;
+  width: 220px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.struktur-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+
+.struktur-card h6 {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.struktur-card span {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.struktur-card.utama {
+  border: 3px solid #198754;
+}
+
+/* GARIS FLOWCHART */
+.line-vertical {
+  width: 3px;
+  height: 40px;
+  background: #198754;
+  margin: 10px auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .struktur-level.row {
+    flex-direction: column;
+  }
+
+  .line-vertical {
+    height: 30px;
+  }
+}
+
+/* FLOWCHART HORIZONTAL */
+.struktur-horizontal {
+  background: #f8fafc;
+}
+
+.flowchart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.flow-card {
+  background: white;
+  width: 200px;
+  padding: 16px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.flow-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+.flow-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.flow-card h6 {
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.flow-card span {
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.flow-card.utama {
+  border: 3px solid #198754;
+}
+
+.flow-line {
+  width: 50px;
+  height: 3px;
+  background: #198754;
+}
+
+.flow-group {
+  display: flex;
+  gap: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .flowchart {
+    flex-direction: column;
+  }
+
+  .flow-line {
+    width: 3px;
+    height: 30px;
+  }
+
+  .flow-group {
+    flex-direction: column;
+  }
+}
