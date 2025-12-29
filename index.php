@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Website Resmi Desa</title>
+  <title>Desa subang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap -->
@@ -357,10 +357,79 @@
 </section>
 
 <footer class="bg-dark text-white text-center py-3">
-  © <?= date('Y') ?> Pemerintah Desa Makmur
+  © <?= date('Y') ?> Pemerintah Desa Subang
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/script.js"></script>
+
+<?php
+// kalau habis submit dan berhasil, redirect dari kirim.php akan kirim query sukses
+$alert = isset($_GET['sukses']) ? true : false;
+?>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aspirasi Desa</title>
+
+<!-- SweetAlert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Confetti -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<style>
+button {
+  transition: 0.15s;
+}
+button:active {
+  transform: scale(0.95);
+}
+</style>
+
+</head>
+<body>
+
+<h2>Kirim Aspirasi Anda</h2>
+<form id="formAspirasi" action="kirim.php" method="POST">
+  <input type="text" name="nama" placeholder="Nama Anda" required><br><br>
+  <textarea name="pesan" placeholder="Tulis aspirasi..." required></textarea><br><br>
+  <button type="submit" onclick="klikEfek()">Kirim Sekarang</button>
+</form>
+
+<script>
+// ======= klik efek: getar + suara + confetti =======
+function klikEfek(){
+  // getar (jika device mendukung)
+  if(navigator.vibrate){
+    navigator.vibrate([40, 60, 40]);
+  }
+  // confetti kecil
+  confetti({
+    particleCount: 100,
+    spread: 60
+  });
+  // efek suara
+  const audio = new Audio("notif.mp3"); // siapkan file notif.mp3 di folder yg sama
+  audio.play();
+}
+
+// ======= tampilkan alert jika kirim sukses =======
+<?php if($alert): ?>
+Swal.fire({
+  icon: 'success',
+  title: 'Aspirasi Terkirim!',
+  text: 'Terima kasih, aspirasi Anda sudah kami terima.',
+  timer: 3000
+});
+<?php endif; ?>
+</script>
+
+</body>
+</html>
+
 </body>
 </html>

@@ -70,41 +70,65 @@ $data = $berita[$id];
 <?php include 'header.php'; ?>
 <?php include 'navbar.php'; ?>
 
-<section class="container my-5">
+<section class="container my-5 fade-in">
   <div class="row justify-content-center">
-    <div class="col-lg-8">
+    <div class="col-lg-10">
 
-      <!-- Judul -->
-      <h1 class="fw-bold mb-2"><?= $data['judul'] ?></h1>
+      <!-- Judul & Meta -->
+      <div class="text-center mb-4">
+        <h1 class="fw-bold d-flex justify-content-center align-items-center gap-2 title-dark">
+          <img src="assets/img/logo.png" width="36" class="me-2" alt="desa"> <!-- ikon -->
+          <?= $data['judul'] ?>
+        </h1>
 
-      <!-- Meta Info -->
-      <div class="text-muted mb-4" style="font-size: 0.9rem;">
-        <span>📅 <?= $data['tanggal'] ?></span> |
-        <span>✍️ <?= $data['penulis'] ?></span>
+        <div class="text-muted mt-3 meta-dark">
+          📅 <?= $data['tanggal'] ?> &nbsp; | &nbsp; ✍️ <?= $data['penulis'] ?>
+        </div>
+
+        <div class="divider-dark mt-3"></div>
       </div>
 
-      <!-- Gambar -->
-      <img src="assets/img/<?= $data['gambar'] ?>" 
-           class="img-fluid rounded shadow-sm mb-4 w-100"
-           alt="<?= $data['judul'] ?>">
+      <!-- Layout gambar + isi -->
+      <div class="row align-items-start gy-4">
+        
+        <!-- Gambar sebelah kiri -->
+        <div class="col-md-5">
+          <img src="assets/img/<?= $data['gambar'] ?>" 
+               class="img-fluid rounded shadow-sm w-100 detail-image"
+               alt="<?= $data['judul'] ?>">
+        </div>
 
-      <!-- Isi Berita -->
-      <div class="content-berita text-dark" style="line-height: 1.9; font-size: 1.05rem;">
-        <?= nl2br($data['isi']) ?>
+        <!-- Isi berita sebelah kanan -->
+        <div class="col-md-7">
+          <article class="content-dark">
+            <p style="text-indent:40px;">
+              <?= nl2br($data['isi']) ?>
+            </p>
+          </article>
+        </div>
+
       </div>
 
-      <!-- Tombol Kembali -->
-      <a href="berita.php" class="btn btn-outline-success mt-5">
-        ← Kembali ke Daftar Berita
-      </a>
+      <div class="divider-light mt-5 mb-4"></div>
+
+      <!-- Tombol kembali -->
+      <div class="text-center">
+        <a href="berita.php" class="btn btn-outline-light px-4 py-2 rounded-pill back-btn">
+          ← Kembali ke Daftar Berita
+        </a>
+      </div>
 
     </div>
   </div>
 </section>
 
 <footer class="bg-dark text-white text-center py-3">
-  © <?= date('Y') ?> Pemerintah Desa Makmur
+  © <?= date('Y') ?> Pemerintah Desa Subang
 </footer>
+
+<!-- Wajib agar dropdown navbar hidup -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
+

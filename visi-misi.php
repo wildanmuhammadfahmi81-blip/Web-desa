@@ -98,7 +98,7 @@
 </script>
 
 <footer class="bg-dark text-white text-center py-3">
-  © <?= date('Y') ?> Pemerintah Desa Makmur
+  © <?= date('Y') ?> Pemerintah Desa Subang
 </footer>
 
 <!-- Bootstrap JS -->

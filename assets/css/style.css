@@ -355,148 +355,615 @@ body {
   transform: scale(1.05);
 }
 
-/* =============================== */
-/* PERANGKAT DESA – KARTU FOTO */
-/* =============================== */
-
-.struktur-desa {
-  background: #f8f9fa;
-}
-
-.struktur-level {
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-/* CARD */
-.struktur-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-}
-
-.struktur-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
-}
-
-/* FOTO PERSEGI */
-.struktur-card img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 12px; /* kotak elegan */
-  margin-bottom: 14px;
-}
-
-/* NAMA */
-.struktur-card h6 {
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-
-/* JABATAN */
-.struktur-card span {
-  font-size: 14px;
-  color: #6c757d;
-}
-
-/* KEPALA DESA KHUSUS */
-.struktur-card.utama {
-  border: 3px solid #ffffff;
-}
-
-/* KARTU STRUKTUR */
+/* === STRUKTUR PERANGKAT DESA === */
 .struktur-card {
   background: #ffffff;
-  padding: 24px 20px;
-  border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  padding: 20px 15px 25px;
+  text-align: center;
   transition: all 0.3s ease;
   height: 100%;
 }
 
-.struktur-card:hover {
-  transform: translateY(-6px);
+/* UKURAN PERSEGI */
+.struktur-card {
+  width: 100%;
+  max-width: 260px;      /* 🔥 BESAR KOTAK */
+  margin: auto;
 }
 
-/* FOTO SERAGAM */
+/* KEPALA DESA LEBIH BESAR */
+.struktur-card.utama {
+  max-width: 320px;
+}
+
+/* GAMBAR */
 .struktur-card img {
-  width: 130px;
-  height: 130px;
-  object-fit: cover;
-  border-radius: 14px;
-  margin-bottom: 14px;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;    /* 🔥 BIAR RAPI */
+  border-radius: 12px;
+  margin: 15px auto;
+  display: block;
+  background: #f0f0f0;
+}
+
+/* JABATAN */
+.jabatan-top {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #198754;
 }
 
 /* NAMA */
-.struktur-card h6 {
+.struktur-card .nama {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+/* HOVER */
+.struktur-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+/* LABEL ATAS */
+.struktur-card .jabatan-top {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f7e96b;
+  color: #333;
+  padding: 6px 18px;
+  border-radius: 0 0 12px 12px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* NAMA BAWAH */
+.struktur-card .nama {
+  margin-top: 12px;
+  background: #1e7f4f;
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* KEPALA DESA LEBIH BESAR */
+.struktur-card.utama {
+  max-width: 280px;
+  margin: auto;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #333;
+}
+
+/* JABATAN ATAS */
+.struktur-card .jabatan-top {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* NAMA PEJABAT */
+.struktur-card .nama {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  letter-spacing: .5px;
+}
+
+/* HOVER EFFECT LEBIH ELEGAN */
+.struktur-card:hover .nama {
+  letter-spacing: 1px;
+}
+
+.section-title,
+.profil-hero h1 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+h4, h5 {
+  font-weight: 600;
+  color: #1f4d2b;
+}
+
+h6 {
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+.section-content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.fade-up {
+  animation: fadeUp 0.8s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === GALERI PKK === */
+.galeri-card {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,.12);
+  background: #fff;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.galeri-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,.2);
+}
+
+/* FOTO SERAGAM */
+.galeri-card img {
+  width: 100%;
+  height: 230px;              /* KUNCI UTAMA */
+  object-fit: cover;          /* BIAR RAPI */
+  display: block;
+}
+
+/* CAPTION */
+.galeri-caption {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.75),
+    rgba(0,0,0,.2),
+    transparent
+  );
+  color: #fff;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.galeri-card:hover .galeri-caption {
+  opacity: 1;
+}
+
+.galeri-caption h6 {
   font-weight: 600;
   margin-bottom: 4px;
 }
 
-/* JABATAN */
-.struktur-card span {
+.galeri-caption p {
   font-size: 14px;
-  color: #6c757d;
+  margin: 0;
 }
 
-/* KEPALA DESA KHUSUS */
-.struktur-card.utama {
-  border: 3px solid #198754;
-}
+/* ===========================
+   GALERI PKK - FIX RAPi TOTAL
+=========================== */
 
-.struktur-card {
+.galeri-card {
+  border-radius: 14px;
+  overflow: hidden;
   background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  transition: .3s;
-  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+  transition: transform .3s ease, box-shadow .3s ease;
 }
 
-.struktur-card img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-}
-
-.struktur-card:hover {
+.galeri-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0,0,0,.15);
+  box-shadow: 0 18px 40px rgba(0,0,0,.25);
 }
 
-.struktur-card {
+/* WRAPPER FOTO */
+.galeri-card img {
+  width: 100%;
+  height: 230px;   /* 🔥 KUNCI UTAMA */
+  object-fit: cover;
+  display: block;
+}
+
+/* CAPTION */
+.galeri-caption {
+  padding: 14px;
+  background: #f8f9fa;
+  border-top: 1px solid #eee;
+}
+
+.galeri-caption h6 {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #2e7d32;
+}
+
+.galeri-caption p {
+  font-size: 14px;
+  margin: 0;
+  color: #555;
+}
+
+/* ==============================
+   GALERI KEGIATAN (FINAL & BERSIH)
+   ============================== */
+
+.galeri-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  transition: transform .35s ease, box-shadow .35s ease;
+  height: 100%;
+}
+
+.galeri-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,.15);
+}
+
+/* WRAPPER GAMBAR (ANTI RUSAK) */
+.galeri-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.galeri-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* CAPTION */
+.galeri-caption {
+  padding: 15px;
+  text-align: center;
+}
+
+.galeri-caption h6 {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1b5e20;
+}
+
+.galeri-caption p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* ANIMASI MASUK */
+.fade-up {
+  animation: fadeUp .8s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==============================
+   GALERI KEGIATAN (FINAL & BERSIH)
+   ============================== */
+
+.galeri-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  transition: transform .35s ease, box-shadow .35s ease;
+  height: 100%;
+}
+
+.galeri-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,.15);
+}
+
+/* WRAPPER GAMBAR (ANTI RUSAK) */
+.galeri-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.galeri-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* CAPTION */
+.galeri-caption {
+  padding: 15px;
+  text-align: center;
+}
+
+.galeri-caption h6 {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1b5e20;
+}
+
+.galeri-caption p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* ANIMASI MASUK */
+.fade-up {
+  animation: fadeUp .8s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   KONTAK & ASPIRASI - PREMIUM
+================================ */
+
+.kontak-section {
+  background: linear-gradient(180deg, #f4f8f6, #ffffff);
+}
+
+/* CARD */
+.kontak-info,
+.kontak-form {
+  background: linear-gradient(180deg, #aec94c, #c47979);
+  border-radius: 22px;
+  padding: 36px;
+  box-shadow: 0 20px 45px rgba(0,0,0,.08);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ORNAMEN KIRI */
+.kontak-info::before,
+.kontak-form::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(180deg, #74d2a6, #0f5132);
+}
+
+/* JUDUL */
+.kontak-info h4,
+.kontak-form h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+/* DESKRIPSI */
+.kontak-info p,
+.kontak-form p {
+  font-size: 14.5px;
+  color: #201717;
+  line-height: 1.7;
+}
+
+/* LIST INFO */
+.kontak-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px dashed #ddd;
+  font-size: 14px;
+}
+
+.kontak-list li:last-child {
+  border-bottom: none;
+}
+
+.kontak-list strong {
+  display: block;
+  font-weight: 600;
+  color: #281313;
+}
+
+/* FORM */
+.kontak-form .form-label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #13130ef9;
+}
+
+.kontak-form .form-control {
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  transition: all .3s ease;
+}
+
+.kontak-form .form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 3px rgb(255, 255, 255);
+}
+
+/* BUTTON */
+.kontak-form .btn {
+  border-radius: 40px;
+  padding: 10px 30px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #198754, #0f5132);
+  border: none;
+}
+
+.kontak-form .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(25,135,84,.35);
+}
+
+/* ANIMASI */
+.fade-up {
+  animation: fadeUp .20s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gallery-card {
+  border-radius: 35px;
+  overflow: hidden;
   transition: .3s;
+}
+
+.gallery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 25px rgba(255, 0, 0, 0.5);
+}
+
+.gallery-img {
   cursor: pointer;
+  transition: .5s;
 }
-.struktur-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+
+.gallery-img:hover {
+  filter: brightness(0.8);
 }
-.struktur-card img {
-  width: 130px;
-  height: 130px;
-  object-fit: cover;
+
+#modalImage {
+  max-height: 80vh;   /* biar gak kepanjangan */
+  object-fit: contain; 
+}
+
+/* Card Berita */
+.berita-item {
+  transition: all .28s ease;
   border-radius: 14px;
 }
 
-.perangkat-foto {
-  width: 120px;
-  height: 120px;
+/* Hover efek elegan */
+.berita-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0,0,0,.12);
+}
+
+/* Wrapper gambar agar semua ukuran konsisten */
+.news-img-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 14px 14px 0 0;
+}
+
+/* Gambar otomatis crop tengah */
+.berita-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border: 4px solid #007bff;
-  padding: 3px;
+  transition: .4s;
 }
 
-.perangkat-kartu {
-  border-radius: 16px;
-  transition: .3s ease;
+/* Zoom gambar saat hover */
+.berita-item:hover .berita-img {
+  transform: scale(1.07);
 }
 
-.perangkat-kartu:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+.content-berita p {
+  margin-bottom: 1.6rem;
 }
 
+/* Hover tombol kembali */
+.btn-outline-success:hover {
+  background: #0b624a;
+  color: white !important;
+  border-color: #0b624a;
+}
+
+/* Gambar */
+.detail-image {
+  border-radius: 14px;
+  border: 2px solid rgba(29,185,84,0.3);
+  transition: .3s;
+}
+.detail-image:hover {
+  transform: scale(1.01);
+  border-color: rgba(29,185,84,0.7);
+}
+
+/* Tombol kembali */
+.back-btn {
+  border-color: #1db954;
+  color: #1db954 !important;
+  transition: .3s;
+}
+.back-btn:hover {
+  background: #1db954;
+  color: #fff !important;
+}
+
+.fade-in {
+  animation: fadeInElegant 5.5s cubic-bezier(0.25, 0.8, 0.25, 1) both;
+}
+
+@keyframes fadeInElegant {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

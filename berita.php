@@ -56,30 +56,65 @@ $berita = [
 ];
 ?>
 
-<section class="container my-5 fade-up">
-  <h2 class="section-title text-center mb-4">Berita Desa</h2>
+<div class="container my-5">
 
-  <div class="row">
+  <div class="text-center mb-4">
+    <span class="text-uppercase fw-semibold" style="letter-spacing: 2px; color:#0b624a;">
+      Informasi & Berita Desa
+    </span>
+    <h2 class="fw-bold mt-2" style="font-size: 2rem; color:#145a32;">
+      Selamat Datang di Berita Desa Subang
+    </h2>
+  </div>
+
+  <p class="text-center mx-auto" style="max-width: 720px; font-size: 1.08rem; line-height: 1.8; color:#444;">
+    Di sini kami membagikan kabar terkini tentang kegiatan warga, pembangunan,
+    dan peristiwa penting yang mewarnai kehidupan desa. Semoga setiap informasi
+    dapat menjadi penghubung antara pemerintah dan masyarakat, serta menumbuhkan
+    rasa <strong>kebersamaan dan kepedulian</strong>.
+  </p>
+
+  <div class="text-center mt-4">
+    <span style="display:inline-block; width:80px; height:4px; background:#0b624a; border-radius:2px;"></span>
+  </div>
+
+</div>
+
+<section class="container my-5 fade-up">
+  <h2 class="text-center fw-bold mb-4">📌 Berita Desa Terkini</h2>
+  <p class="text-center text-muted mb-5">
+    Update informasi dan kegiatan terbaru yang berlangsung di Desa Subang
+  </p>
+
+  <div class="row g-4">
     <?php foreach($berita as $b): ?>
-    <div class="col-md-4 mb-4">
-      <div class="card card-berita h-100">
-        <img src="assets/img/<?= $b['gambar'] ?>" class="card-img-top" alt="<?= $b['judul'] ?>">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title"><?= $b['judul'] ?></h5>
-          <p class="card-text text-muted"><?= $b['ringkas'] ?></p>
-          <a href="detail-berita.php?id=<?= $b['id'] ?>" 
-   class="btn btn-success btn-sm mt-auto">
-   Baca Selengkapnya
-</a>
+      <div class="col-md-4 col-sm-6">
+        <div class="card border-0 shadow-sm h-100 berita-item">
+          
+          <!-- GAMBAR -->
+          <div class="news-img-wrapper">
+            <img src="assets/img/<?= $b['gambar'] ?>" class="card-img-top berita-img" alt="<?= $b['judul'] ?>">
+          </div>
+
+          <!-- ISI -->
+          <div class="card-body d-flex flex-column">
+            <h5 class="fw-semibold"><?= $b['judul'] ?></h5>
+            <p class="text-muted small mb-3"><?= $b['ringkas'] ?></p>
+
+            <a href="detail-berita.php?id=<?= $b['id'] ?>" 
+               class="btn btn-outline-success mt-auto rounded-pill fw-semibold">
+              Baca Selengkapnya →
+            </a>
+          </div>
+
         </div>
       </div>
-    </div>
     <?php endforeach; ?>
   </div>
 </section>
 
 <footer class="bg-dark text-white text-center py-3">
-  © <?= date('Y') ?> Pemerintah Desa Makmur
+  © <?= date('Y') ?> Pemerintah Desa Subang
 </footer>
 
 <script src="assets/js/script.js"></script>

@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- CSS Lokal -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -36,12 +36,12 @@
   <div class="container text-center">
 
     <!-- KEPALA DESA -->
-    <div class="struktur-level mb-5">
-      <a href="detail-perangkat.php?id=kades" class="text-decoration-none text-dark">
-        <div class="struktur-card utama text-center">
+    <div class="mb-5">
+      <a href="detail-perangkat.php?id=kades" class="text-decoration-none">
+        <div class="struktur-card utama">
+          <div class="jabatan-top">KEPALA DESA</div>
           <img src="assets/img/kades.png" alt="Kepala Desa">
-          <h6 class="mt-3">Bapak Ahmad Subandi</h6>
-          <span>Kepala Desa</span>
+          <div class="nama">Irin Ismail</div>
         </div>
       </a>
     </div>
@@ -49,35 +49,32 @@
     <!-- PERANGKAT DESA -->
     <div class="row justify-content-center g-4">
 
-      <!-- SEKRETARIS DESA -->
       <div class="col-md-3 col-sm-6">
-        <a href="detail-perangkat.php?id=sekdes" class="text-decoration-none text-dark">
-          <div class="struktur-card text-center">
-            <img src="assets/img/sekdes.jpg" alt="Sekretaris Desa">
-            <h6 class="mt-3">Ibu Siti Aminah</h6>
-            <span>Sekretaris Desa</span>
+        <a href="detail-perangkat.php?id=sekdes" class="text-decoration-none">
+          <div class="struktur-card">
+            <div class="jabatan-top">SEKRETARIS DESA</div>
+            <img src="assets/img/sekdes.jpg">
+            <div class="nama">Siti Aminah</div>
           </div>
         </a>
       </div>
 
-      <!-- KAUR KEUANGAN -->
       <div class="col-md-3 col-sm-6">
-        <a href="detail-perangkat.php?id=keuangan" class="text-decoration-none text-dark">
-          <div class="struktur-card text-center">
-            <img src="assets/img/sekdes.jpg" alt="Kaur Keuangan">
-            <h6 class="mt-3">Bapak Dedi Saputra</h6>
-            <span>Kaur Keuangan</span>
+        <a href="detail-perangkat.php?id=keuangan" class="text-decoration-none">
+          <div class="struktur-card">
+            <div class="jabatan-top">KAUR KEUANGAN</div>
+            <img src="assets/img/sekdes.jpg">
+            <div class="nama">Dedi Saputra</div>
           </div>
         </a>
       </div>
 
-      <!-- KAUR UMUM -->
       <div class="col-md-3 col-sm-6">
-        <a href="detail-perangkat.php?id=umum" class="text-decoration-none text-dark">
-          <div class="struktur-card text-center">
-            <img src="assets/img/sekdes.jpg" alt="Kaur Umum">
-            <h6 class="mt-3">Bapak Wildan</h6>
-            <span>Kaur Umum</span>
+        <a href="detail-perangkat.php?id=umum" class="text-decoration-none">
+          <div class="struktur-card">
+            <div class="jabatan-top">KAUR UMUM</div>
+            <img src="assets/img/sekdes.jpg">
+            <div class="nama">Wildan</div>
           </div>
         </a>
       </div>
@@ -88,7 +85,7 @@
 </section>
 
 <footer class="bg-dark text-white text-center py-3">
-  © <?= date('Y') ?> Pemerintah Desa Makmur
+  © <?= date('Y') ?> Pemerintah Desa Subang
 </footer>
 
 <!-- Bootstrap JS -->

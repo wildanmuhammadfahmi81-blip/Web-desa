@@ -31,3 +31,17 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 
   });
 });
+
+function kirimAspirasi() {
+  Swal.fire({
+    title: "Aspirasi Terkirim!",
+    text: "Terima kasih! Aspirasi Anda sudah disimpan.",
+    icon: "success",
+    confirmButtonText: "kembali ke halaman utama",
+  }).then(() => {
+    // Reset form setelah popup ditutup
+    document.getElementById("formAspirasi").reset();
+  });
+
+  return false; // cegah reload halaman
+}

@@ -27,6 +27,20 @@
   </ul>
 </li>
 
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    LEMBAGA
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="bpd.php">BADAN PERMUSYAWARATAN DESA(BPD)</a></li>
+    <li><a class="dropdown-item" href="pkk.php">PEMBINAAN KESEJATERAAN KELUARGA(PKK)</a></li>
+    <li><a class="dropdown-item" href="mui.php">MAJELIS ULAMA INDONESIA(MUI)</a></li>
+    <li><a class="dropdown-item" href="dkm.php">DEWAN KEMAKMURAN MESJID(DKM)</a></li>
+    <li><a class="dropdown-item" href="karang-taruna.php">KARANG TARUNA</a></li>
+    <li><a class="dropdown-item" href="kelompok-tani.php">KELOMPOK TANI</a></li>
+  </ul>
+</li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
             INFORMASI
@@ -35,6 +49,17 @@
             <li><a class="dropdown-item" href="berita.php">Berita</a></li>
             <li><a class="dropdown-item" href="galeri.php">Galeri Foto</a></li>
             <li><a class="dropdown-item" href="agenda.php">Agenda</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            DIREKTORI
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="demografis.php">DEMOGRAFIS</a></li>
+            <li><a class="dropdown-item" href="geografis.php">GEOGRAFIS & GEOLOGI</a></li>
+            <li><a class="dropdown-item" href="produk-hukum.php">PRODUK HUKUM</a></li>
           </ul>
         </li>
 
