@@ -967,3 +967,373 @@ ul li {
     transform: translateY(0);
   }
 }
+
+.statistik-desa {
+  background: linear-gradient(135deg, #198754, #146c43);
+  color: #fff;
+}
+
+.statistik-desa .section-title {
+  font-weight: 700;
+  color: #fff;
+}
+
+.stat-card {
+  background: #ffffff;
+  color: #198754;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+}
+
+.stat-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.stat-number {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.testimoni-section {
+  background: #f8f9fa;
+}
+
+.testimoni-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  position: relative;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.testimoni-card:hover {
+  transform: translateY(-8px);
+}
+
+.quote {
+  font-size: 70px;
+  color: #198754;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  font-family: serif;
+}
+
+.testimoni-text {
+  font-style: italic;
+  line-height: 1.7;
+  margin-top: 20px;
+}
+
+.testimoni-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.testimoni-user img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #198754;
+}
+
+.testimoni-user span {
+  display: block;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.apbdes-section {
+  background: #f8f9fa;
+}
+
+.apbdes-summary {
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.apbdes-summary h6 {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.apbdes-summary h3 {
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.apbdes-table {
+  background: #fff;
+}
+
+.apbdes-table thead {
+  background: #198754;
+  color: #fff;
+}
+
+.apbdes-table th,
+.apbdes-table td {
+  vertical-align: middle;
+  padding: 14px;
+}
+
+.progress {
+  height: 22px;
+  border-radius: 12px;
+  background: #e9ecef;
+}
+
+.progress-bar {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ===== PENGUMUMAN ===== */
+
+.pengumuman-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  transition: all 0.35s ease;
+  height: 100%;
+}
+
+.pengumuman-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.pengumuman-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.pengumuman-header small {
+  color: #6c757d;
+  font-size: 12px;
+}
+
+/* Badge */
+.pengumuman-card .badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Variasi warna */
+.pengumuman-card.penting .badge {
+  background: #dc3545;
+}
+
+.pengumuman-card.info .badge {
+  background: #0d6efd;
+}
+
+.pengumuman-card.rutin .badge {
+  background: #198754;
+}
+
+.pengumuman-card h6 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.pengumuman-card p {
+  font-size: 14px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* ===== POTENSI DESA ===== */
+.potensi-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+  transition: 0.35s;
+}
+
+.potensi-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.potensi-img {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.potensi-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.potensi-card h6 {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.potensi-card p {
+  font-size: 13px;
+  color: #6c757d;
+}
+
+/* ===== UMKM ===== */
+.umkm-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+  transition: 0.35s;
+}
+
+.umkm-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.umkm-img {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.umkm-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.umkm-card h6 {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.umkm-card span {
+  font-size: 13px;
+  color: #198754;
+  font-weight: 600;
+}
+
+/* ===== LAYANAN DESA ===== */
+.layanan-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.layanan-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 22px 18px;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: 0.35s;
+}
+
+.layanan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+.layanan-icon {
+  width: 100%;
+  height: 160px;
+  border-radius: 16px; /* kotak rounded */
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.layanan-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.layanan-card h6 {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.layanan-card p {
+  font-size: 13px;
+  color: #6c757d;
+}
+
+/* ===== GALERI ===== */
+.galeri-card {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: 0.35s;
+}
+
+.galeri-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.galeri-card:hover img {
+  transform: scale(1.08);
+}
+
+.profil-desa-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 24px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+.profil-item i {
+  font-size: 36px;
+  color: #198754;
+  margin-bottom: 10px;
+}
+
+.profil-item h6 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.profil-item small {
+  color: #6c757d;
+}
+
+/* Dropdown hover (desktop) */
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}

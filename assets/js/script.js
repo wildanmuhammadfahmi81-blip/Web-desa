@@ -45,3 +45,24 @@ function kirimAspirasi() {
 
   return false; // cegah reload halaman
 }
+
+const counters = document.querySelectorAll('.stat-number');
+
+counters.forEach(counter => {
+  const target = +counter.getAttribute('data-target');
+  let count = 0;
+  const speed = 50;
+
+  const updateCount = () => {
+    const increment = target / speed;
+    if (count < target) {
+      count += increment;
+      counter.innerText = Math.ceil(count);
+      setTimeout(updateCount, 30);
+    } else {
+      counter.innerText = target;
+    }
+  };
+
+  updateCount();
+});
