@@ -63,7 +63,7 @@ Kecamatan Subang, Kabupaten Kuningan:
 <div class='row justify-content-center'>
   <div class='col-md-10'>
     <div class='card shadow-sm p-4'>
-      <canvas id='grafikPanen' height='120'></canvas>
+      <canvas id='grafikPanen' height='160'></canvas>
     </div>
   </div>
 </div>
@@ -76,10 +76,10 @@ Kecamatan Subang, Kabupaten Kuningan:
   <div class='col-md-4 col-sm-6'>
     <div class='galeri-card'>
       <div class='galeri-img'>
-        <img src='assets/img/kelompok-tani/kegiatan1.jpg' alt='Pengolahan Lahan'>
+        <img src='assets/img/kelompok-tani/kegiatan1.jpeg' alt='Pengolahan Lahan'>
       </div>
       <div class='galeri-caption'>
-        <h6>Pengolahan Lahan</h6>
+        <h6>Pengolahan Lahan sawah</h6>
         <p>Persiapan lahan pertanian</p>
       </div>
     </div>
@@ -128,9 +128,9 @@ new Chart(ctx, {
     labels: ['Padi', 'Jagung', 'Singkong', 'Cabai', 'Sayuran'],
     datasets: [{
       label: 'Hasil Panen (Ton)',
-      data: [120, 85, 60, 40, 75],
+      data: [150, 75, 90, 10, 85],
       backgroundColor: [
-        '#198754',
+        '#9bf2c9ff',
         '#20c997',
         '#0d6efd',
         '#ffc107',

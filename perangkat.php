@@ -79,6 +79,56 @@
         </a>
       </div>
 
+      <div class="col-md-3 col-sm-6">
+        <a href="detail-perangkat.php?id=umum" class="text-decoration-none">
+          <div class="struktur-card">
+            <div class="jabatan-top">KAUR Agama</div>
+            <img src="assets/img/sekdes.jpg">
+            <div class="nama">Fahmi</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <a href="detail-perangkat.php?id=umum" class="text-decoration-none">
+          <div class="struktur-card">
+            <div class="jabatan-top">KAUR Olahraga</div>
+            <img src="assets/img/sekdes.jpg">
+            <div class="nama">Muhammad</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <a href="detail-perangkat.php?id=umum" class="text-decoration-none">
+          <div class="struktur-card">
+            <div class="jabatan-top">KAUR Dusun</div>
+            <img src="assets/img/sekdes.jpg">
+            <div class="nama">Fakhira</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <a href="detail-perangkat.php?id=umum" class="text-decoration-none">
+          <div class="struktur-card">
+            <div class="jabatan-top">KAUR RW</div>
+            <img src="assets/img/sekdes.jpg">
+            <div class="nama">Fakh</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <a href="detail-perangkat.php?id=umum" class="text-decoration-none">
+          <div class="struktur-card">
+            <div class="jabatan-top">KAUR RT</div>
+            <img src="assets/img/sekdes.jpg">
+            <div class="nama">Rahman</div>
+          </div>
+        </a>
+      </div>
+
     </div>
 
   </div>

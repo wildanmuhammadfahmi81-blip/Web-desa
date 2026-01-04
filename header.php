@@ -19,11 +19,16 @@
         <a href="#" class="text-dark text-decoration-none">WEBMAIL</a>
       </div>
 
-      <form class="d-flex">
-        <input type="text" class="form-control form-control-sm me-2" placeholder="Cari...">
-        <button class="btn btn-sm btn-outline-success">🔍</button>
-      </form>
-    </div>
+      <form class="d-flex" method="GET">
+  <input
+    type="text"
+    name="keyword"
+    class="form-control form-control-sm me-2"
+    placeholder="Cari pengumuman..."
+    value="<?= isset($_GET['keyword']) ? $_GET['keyword'] : '' ?>"
+  >
+  <button class="btn btn-sm btn-outline-success">🔍</button>
+</form>
 
   </div>
 </header>

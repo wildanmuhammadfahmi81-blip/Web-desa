@@ -23,7 +23,7 @@
 
 <!-- HERO FULL WIDTH -->
 <section class="hero-full">
-  <img src="assets/img/desa.jpg" alt="Balai Desa Subang">
+  <img src="assets/img/kantordesa.jpg" alt="Balai Desa Subang">
 
   <div class="hero-overlay">
     <h1>Website Resmi Desa Subang</h1>
@@ -204,6 +204,24 @@
       </div>
     </div>
 
+    <div class="col-md-4 col-sm-6">
+      <div class="galeri-card">
+        <img src="assets/img/subang.png" alt="Kegiatan Desa">
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="galeri-card">
+        <img src="assets/img/subang.png" alt="Kegiatan Desa">
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="galeri-card">
+        <img src="assets/img/subang.png" alt="Kegiatan Desa">
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -258,7 +276,7 @@
 
 <!-- === UMKM DESA === -->
 <section class="container my-5 fade-up">
-  <h3 class="section-title text-center">UMKM Desa</h3>
+  <h3 class="section-title text-center">UMKM DESA</h3>
 
   <div class="row g-4 mt-4">
 
@@ -356,6 +374,51 @@
       </div>
     </div>
 
+    <!-- Pengumuman 4 -->
+    <div class="col-md-4">
+      <div class="pengumuman-card info">
+        <div class="pengumuman-header">
+          <span class="badge">INFO</span>
+          <small>25 Jan 2025</small>
+        </div>
+        <h6>Pembagian sembako</h6>
+        <p>
+          Pembagian bantuan sembako bagi warga kurang mampu
+      dilaksanakan pada 17 Januari 2025 di Balai Desa.
+        </p>
+      </div>
+    </div>
+
+    <!-- Pengumuman 5 -->
+    <div class="col-md-4">
+      <div class="pengumuman-card info">
+        <div class="pengumuman-header">
+          <span class="badge">INFORMASI</span>
+          <small>08 Jan 2025</small>
+        </div>
+        <h6>Perbuhan jam layanan desa</h6>
+        <p>
+          Jam pelayanan Kantor Desa berubah menjadi
+      pukul 08.00 – 14.00 WIB selama bulan Januari.
+        </p>
+      </div>
+    </div>
+
+    <!-- Pengumuman 6 -->
+    <div class="col-md-4">
+      <div class="pengumuman-card rutin">
+        <div class="pengumuman-header">
+          <span class="badge">RUTIN</span>
+          <small>01 Jan 2025</small>
+        </div>
+        <h6>Posyandu Balita</h6>
+        <p>
+          Kegiatan Posyandu Balita dilaksanakan setiap
+      tanggal 10 di Posyandu masing-masing dusun.
+        </p>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -417,6 +480,13 @@
         </div>
       </div>
     </div>
+    <div class="col-md-4">
+        <div class="apbdes-summary bg-warning text-dark">
+          <h6>Tidak Realisasi</h6>
+          <h3>50%</h3>
+        </div>
+      </div>
+    </div>
 
     <!-- TABEL -->
     <div class="table-responsive shadow-sm rounded">
@@ -464,12 +534,23 @@
             </td>
           </tr>
 
+          <tr>
+            <td>4</td>
+            <td>Yang tidak Teralisasi</td>
+            <td>Rp 1.120.000.000</td>
+            <td>
+              <div class="progress">
+                <div class="progress-bar bg-warning text-dark" style="width:115%">115%</div>
+              </div>
+            </td>
+          </tr>
+
         </tbody>
 
         <tfoot>
           <tr>
             <th colspan="2" class="text-end">TOTAL ANGGARAN</th>
-            <th colspan="2">Rp 545.000.000</th>
+            <th colspan="2">Rp 2.545.000.000</th>
           </tr>
         </tfoot>
       </table>
@@ -548,7 +629,7 @@
 <!-- === PETA GOOGLE MAPS BALAI DESA === -->
 <section class="container my-5 fade-up">
   <h3 class="section-title text-center">Lokasi Balai Desa Subang</h3>
-  <p class="text-center text-muted">Balai Desa Subang, Kec. ... , Kab. ...</p>
+  <p class="text-center text-muted">Desa Subang, Kec. Subang, Kab. Kuningan</p>
 
   <div style="width:100%; height:350px;">
   <iframe width="100%" height="100%" style="border:0"

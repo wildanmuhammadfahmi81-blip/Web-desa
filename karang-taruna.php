@@ -64,7 +64,7 @@ Kecamatan Subang, Kabupaten Kuningan:
   <div class='col-md-4 col-sm-6'>
     <div class='galeri-card'>
       <div class='galeri-img'>
-        <img src='assets/img/karang-taruna/kegiatan1.jpg' alt='Kerja Bakti'>
+        <img src='assets/img/karangtaruna/kegiatan1.jpeg' alt='Kerja Bakti'>
       </div>
       <div class='galeri-caption'>
         <h6>Kerja Bakti Desa</h6>
@@ -76,7 +76,7 @@ Kecamatan Subang, Kabupaten Kuningan:
   <div class='col-md-4 col-sm-6'>
     <div class='galeri-card'>
       <div class='galeri-img'>
-        <img src='assets/img/karang-taruna/kegiatan2.jpg' alt='Olahraga'>
+        <img src='assets/img/karangtaruna/kegiatan2.jpeg' alt='Olahraga'>
       </div>
       <div class='galeri-caption'>
         <h6>Turnamen Olahraga</h6>
@@ -88,7 +88,7 @@ Kecamatan Subang, Kabupaten Kuningan:
   <div class='col-md-4 col-sm-6'>
     <div class='galeri-card'>
       <div class='galeri-img'>
-        <img src='assets/img/karang-taruna/kegiatan3.jpg' alt='Pelatihan'>
+        <img src='assets/img/karangtaruna/kegiatan3.jpeg' alt='Pelatihan'>
       </div>
       <div class='galeri-caption'>
         <h6>Pelatihan Kewirausahaan</h6>
