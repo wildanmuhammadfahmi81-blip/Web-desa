@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
 
     <a class="navbar-brand fw-bold" href="index.php">

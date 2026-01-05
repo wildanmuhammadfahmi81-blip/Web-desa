@@ -3,98 +3,127 @@ $judul = "Geografis & Geologi";
 $subjudul = "Kondisi wilayah, penggunaan lahan, dan data resmi Desa Subang";
 
 $konten = "
-<h4 class='mb-3'>📍 Letak & Koordinat Geografis</h4>
+<div class='geografis-desa'>
 
-<p>
-Desa Subang terletak di wilayah <strong>Kecamatan Subang,
-Kabupaten Kuningan, Provinsi Jawa Barat</strong>.
-Secara geografis desa ini berada pada koordinat:
-</p>
+  <!-- INFO LOKASI -->
+  <div class='card shadow-sm mb-4'>
+    <div class='card-body'>
+      <h5 class='fw-semibold mb-3'>📍 Letak & Koordinat Geografis</h5>
 
-<ul>
-  <li><strong>Lintang</strong> : 6°58′ LS</li>
-  <li><strong>Bujur</strong> : 108°28′ BT</li>
-  <li><strong>Ketinggian</strong> : ±450 mdpl</li>
-</ul>
+      <p>
+      Desa Subang berada di <strong>Kecamatan Subang, Kabupaten Kuningan,
+      Provinsi Jawa Barat</strong>. Secara geografis, wilayah desa ini
+      berada pada koordinat:
+      </p>
 
-<p class='text-muted fst-italic'>
-Koordinat ini digunakan sebagai acuan administrasi dan perencanaan wilayah desa.
-</p>
+      <div class='row'>
+        <div class='col-md-6'>
+          <ul class='mb-0'>
+            <li><strong>Lintang</strong> : 6°58′ LS</li>
+            <li><strong>Bujur</strong> : 108°28′ BT</li>
+          </ul>
+        </div>
+        <div class='col-md-6'>
+          <ul class='mb-0'>
+            <li><strong>Ketinggian</strong> : ±450 mdpl</li>
+            <li><strong>Luas Wilayah</strong> : ±425 Ha</li>
+          </ul>
+        </div>
+      </div>
 
-<hr class='my-4'>
-
-<h4>🗺️ Batas & Luas Wilayah</h4>
-<p>
-Desa Subang memiliki luas wilayah sekitar <strong>±425 hektar</strong>
-dengan batas administratif sebagai berikut:
-</p>
-
-<ul>
-  <li>Utara : Desa A</li>
-  <li>Selatan : Desa B</li>
-  <li>Barat : Desa C</li>
-  <li>Timur : Desa D</li>
-</ul>
-
-<hr class='my-4'>
-
-<h4>🌾 Grafik Penggunaan Lahan</h4>
-<p>
-Komposisi penggunaan lahan Desa Subang didominasi oleh sektor
-pertanian dan permukiman, sebagaimana tergambar pada grafik berikut:
-</p>
-
-<div class='card shadow-sm p-4 mb-4'>
-  <canvas id='grafikLahan' height='120'></canvas>
-</div>
-
-<hr class='my-4'>
-
-<h4>⛰️ Kondisi Geologi & Topografi</h4>
-<p>
-Wilayah Desa Subang memiliki kontur <strong>datar hingga perbukitan ringan</strong>.
-Jenis tanah yang dominan adalah tanah lempung subur,
-sangat cocok untuk pertanian dan perkebunan rakyat.
-</p>
-
-<hr class='my-4'>
-
-<h4>📊 Data BPS / Profil Desa</h4>
-<p>
-Berdasarkan data Profil Desa dan Badan Pusat Statistik (BPS),
-Desa Subang memiliki karakteristik sebagai berikut:
-</p>
-
-<div class='row'>
-  <div class='col-md-6'>
-    <ul>
-      <li>Jumlah Penduduk: ±3.250 jiwa</li>
-      <li>Jumlah KK: ±980 KK</li>
-      <li>Kepadatan Penduduk: ±7,6 jiwa/ha</li>
-    </ul>
+      <p class='fst-italic text-muted mt-3 mb-0'>
+        Koordinat ini digunakan sebagai acuan administrasi dan perencanaan wilayah desa.
+      </p>
+    </div>
   </div>
-  <div class='col-md-6'>
-    <ul>
-      <li>Mata Pencaharian Utama: Pertanian</li>
-      <li>Komoditas Unggulan: Padi, Jagung</li>
-      <li>Jumlah Dusun: 4 Dusun</li>
-    </ul>
-  </div>
-</div>
 
-<p class='fst-italic text-muted mt-4'>
-Data ini digunakan sebagai dasar perencanaan pembangunan desa
-dan disesuaikan dengan Profil Desa serta publikasi BPS setempat.
-</p>
+  <!-- BATAS WILAYAH -->
+  <div class='card shadow-sm mb-4'>
+    <div class='card-body'>
+      <h5 class='fw-semibold mb-3'>🗺️ Batas Wilayah Administratif</h5>
+      <div class='row'>
+        <div class='col-md-6'>
+          <ul>
+            <li>Utara : Desa A</li>
+            <li>Selatan : Desa B</li>
+          </ul>
+        </div>
+        <div class='col-md-6'>
+          <ul>
+            <li>Barat : Desa C</li>
+            <li>Timur : Desa D</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GRAFIK LAHAN -->
+  <div class='card shadow-sm mb-4'>
+    <div class='card-body'>
+      <h5 class='fw-semibold mb-2'>🌾 Penggunaan Lahan Desa</h5>
+      <p class='text-muted small'>
+        Persentase penggunaan lahan di Desa Subang berdasarkan sektor utama.
+      </p>
+
+      <div class='row justify-content-center'>
+        <div class='col-md-6 col-lg-5'>
+          <canvas id='grafikLahan' height='180'></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GEOLOGI -->
+  <div class='card shadow-sm mb-4'>
+    <div class='card-body'>
+      <h5 class='fw-semibold mb-3'>⛰️ Kondisi Geologi & Topografi</h5>
+      <p class='mb-0'>
+        Wilayah Desa Subang memiliki kontur <strong>datar hingga perbukitan ringan</strong>
+        dengan jenis tanah dominan berupa <strong>lempung subur</strong>,
+        sehingga sangat mendukung sektor pertanian dan perkebunan rakyat.
+      </p>
+    </div>
+  </div>
+
+  <!-- DATA BPS -->
+  <div class='card shadow-sm'>
+    <div class='card-body'>
+      <h5 class='fw-semibold mb-3'>📊 Data Resmi BPS / Profil Desa</h5>
+
+      <div class='row'>
+        <div class='col-md-6'>
+          <ul>
+            <li>Jumlah Penduduk: ±3.250 Jiwa</li>
+            <li>Jumlah KK: ±980 KK</li>
+            <li>Kepadatan Penduduk: ±7,6 Jiwa/Ha</li>
+          </ul>
+        </div>
+        <div class='col-md-6'>
+          <ul>
+            <li>Mata Pencaharian Utama: Pertanian</li>
+            <li>Komoditas Unggulan: Padi & Jagung</li>
+            <li>Jumlah Dusun: 4 Dusun</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class='fst-italic text-muted mt-3 mb-0'>
+        Data bersumber dari Profil Desa dan publikasi Badan Pusat Statistik (BPS).
+      </p>
+    </div>
+  </div>
+
+</div>
 
 <script>
-const ctx = document.getElementById('grafikLahan').getContext('2d');
+const ctx = document.getElementById('grafikLahan');
 
 new Chart(ctx, {
-  type: 'pie',
+  type: 'doughnut',
   data: {
     labels: [
-      'Lahan Pertanian',
+      'Pertanian',
       'Permukiman',
       'Perkebunan',
       'Fasilitas Umum',
@@ -107,11 +136,13 @@ new Chart(ctx, {
         '#0d6efd',
         '#20c997',
         '#ffc107',
-        '#6c757d'
-      ]
+        '#adb5bd'
+      ],
+      borderWidth: 1
     }]
   },
   options: {
+    cutout: '65%',
     plugins: {
       legend: {
         position: 'bottom'
